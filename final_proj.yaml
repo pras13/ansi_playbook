@@ -3,7 +3,8 @@
    become: yes
    tasks:
            - name: deploying war into tomcat server
-             copy:
+             synchronize:
                      src: /home/vagrant/ansible/workspace/project_pipeline_1/project1_package_phase/target/addressbook.war
                      dest: home/vagrant/myjar
-                     remote_src: yes
+                     mode: push
+         
