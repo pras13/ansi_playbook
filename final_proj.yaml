@@ -3,7 +3,7 @@
    tasks:
            - name: deploying war into tomcat server
              copy:
-                     src: /home/vagrant/playbooks/mywar/addressbook.war
+                     src: /home/vagrant/ansible/workspace/project_pipeline_1/project1_package_phase/target/addressbook-2.0.war
                      dest: home/vagrant/var/lib/tomcat9/webapps
                      remote_src: false
              become: yes
